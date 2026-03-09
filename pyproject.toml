@@ -1,0 +1,13 @@
+[project]
+name = "baseball"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "jupyter>=1.1.1",
+    "matplotlib>=3.10.8",
+    "notebook>=7.5.4",
+    "pybaseball>=2.2.7",
+    "pymc>=5.28.1",
+]
