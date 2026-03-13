@@ -5,11 +5,8 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.14"
 dependencies = [
-<<<<<<< HEAD
     "graphviz>=0.21",
-=======
     "arviz>=0.23.4",
->>>>>>> 558ac3c1f8a0e78659d674ee064f3a597044124b
     "jupyter>=1.1.1",
     "jupyterlab>=4.5.5",
     "matplotlib>=3.10.8",
