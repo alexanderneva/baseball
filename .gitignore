@@ -8,3 +8,4 @@ wheels/
 .ipynb_checkpoints/
 # Virtual environments
 .venv
+data/
