@@ -1,0 +1,26 @@
+Inference for Stan model: model_model
+1 chains: each with iter=1000; warmup=1000; thin=1; 1000 iterations saved.
+
+Warmup took 0.015 seconds
+Sampling took 0.020 seconds
+
+                 Mean      MCSE    StdDev       MAD     5%    50%    95%  ESS_bulk  ESS_tail  ESS_bulk/s  R_hat
+
+lp__            -1064  8.15e-02  1.77e+00  1.71e+00  -1067  -1064  -1061       488       623       24400  1.000
+accept_stat__   0.932  2.56e-03  8.62e-02  5.20e-02  0.768  0.959   1.00      1231       873       61564   1.00
+stepsize__      0.558       nan  5.55e-16  0.00e+00  0.558  0.558  0.558       nan       nan         nan    nan
+treedepth__      2.88  1.12e-02  3.30e-01  0.00e+00   2.00   3.00   3.00       nan       nan         nan    nan
+n_leapfrog__     6.68  3.70e-02  1.09e+00  0.00e+00   3.00   7.00   7.00       nan       nan         nan    nan
+divergent__     0.000       nan  0.00e+00  0.00e+00  0.000  0.000  0.000       nan       nan         nan    nan
+energy__         1067  1.24e-01  2.43e+00  2.37e+00   1063   1067   1071       383       549       19146  1.000
+
+mu              0.283  1.76e-03  5.06e-02  5.37e-02  0.203  0.282  0.366       812       694       40592   1.00
+kappa            24.7  4.20e-01  1.45e+01  1.31e+01   6.64   21.3   52.8      1066       639       53314   1.00
+theta[1]        0.264  6.56e-04  2.46e-02  2.55e-02  0.225  0.264  0.303      1398       737       69890   1.01
+theta[2]        0.268  5.94e-04  2.31e-02  2.47e-02  0.231  0.268  0.307      1513       882       75637   1.00
+theta[3]        0.303  5.76e-04  2.09e-02  2.07e-02  0.269  0.302  0.337      1335       621       66756   1.00
+theta[4]        0.305  4.80e-04  1.93e-02  1.87e-02  0.275  0.304  0.338      1617       651       80855   1.00
+
+Samples were drawn using hmc with nuts.
+For each parameter, ESS_bulk and ESS_tail measure the effective sample size for the entire sample (bulk) and for the .05 and .95 tails (tail), 
+and R_hat measures the potential scale reduction on split chains. At convergence R_hat will be very close to 1.00.

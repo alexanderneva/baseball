@@ -20,6 +20,6 @@ for name in player_names:
         data_for_stan["K"].append(hitting_stats.at_bats)
 
 # Save as JSON for your Stan terminal command
-with open('data.json', 'w') as f:
+with open('player_data.json', 'w') as f:
     json.dump(data_for_stan, f)
 

@@ -1,0 +1,36 @@
+Inference for Stan model: model_with_prior_model
+1 chains: each with iter=1000; warmup=1000; thin=1; 1000 iterations saved.
+
+Warmup took 0.013 seconds
+Sampling took 0.025 seconds
+
+                  Mean      MCSE    StdDev       MAD        5%    50%    95%  ESS_bulk  ESS_tail  ESS_bulk/s  R_hat
+
+lp__             -1064  8.03e-02  1.72e+00  1.52e+00 -1.07e+03  -1063  -1061       476       643       19045   1.00
+accept_stat__    0.908  3.56e-03  1.16e-01  7.02e-02     0.701  0.946   1.00      1078      1022       43125   1.01
+stepsize__       0.633       nan  2.22e-15  0.00e+00     0.633  0.633  0.633       nan       nan         nan    nan
+treedepth__       2.75  1.67e-02  4.38e-01  0.00e+00      2.00   3.00   3.00       nan       nan         nan    nan
+n_leapfrog__      6.42  4.94e-02  1.42e+00  0.00e+00      3.00   7.00   7.00       nan       nan         nan    nan
+divergent__      0.000       nan  0.00e+00  0.00e+00     0.000  0.000  0.000       nan       nan         nan    nan
+energy__          1067  1.20e-01  2.40e+00  2.22e+00      1063   1066   1071       404       591       16172   1.00
+
+mu               0.283  1.67e-03  4.78e-02  4.49e-02  2.05e-01  0.283  0.362       837       760       33492  1.000
+kappa             25.0  4.00e-01  1.47e+01  1.33e+01  6.73e+00   22.1   52.4      1216       652       48627   1.00
+theta[1]         0.264  6.35e-04  2.41e-02  2.50e-02  2.27e-01  0.263  0.304      1463       613       58534   1.00
+theta[2]         0.268  6.53e-04  2.23e-02  2.17e-02  2.32e-01  0.268  0.307      1162       584       46462   1.00
+theta[3]         0.303  5.59e-04  2.04e-02  2.11e-02  2.70e-01  0.302  0.337      1312       750       52484   1.00
+theta[4]         0.305  4.83e-04  1.91e-02  1.98e-02  2.75e-01  0.304  0.337      1582       791       63285  0.999
+mu_prior         0.199  3.73e-03  1.20e-01  1.17e-01  3.89e-02  0.175  0.425       991       925       39628   1.00
+kappa_prior       9.92  3.20e-01  9.99e+00  7.36e+00  5.36e-01   7.08   29.5      1046       944       41826  0.999
+theta_prior[1]   0.201  7.36e-03  2.13e-01  1.75e-01  1.23e-06  0.139  0.668       741       981       29638   1.00
+theta_prior[2]   0.210  7.09e-03  2.20e-01  1.89e-01  3.61e-06  0.151  0.685       912       900       36484  1.000
+theta_prior[3]   0.210  6.91e-03  2.24e-01  1.84e-01  1.73e-06  0.140  0.687       963      1013       38519   1.00
+theta_prior[4]   0.192  6.86e-03  2.07e-01  1.70e-01  2.03e-06  0.128  0.622       914       939       36568   1.00
+y_prior[1]        62.3  2.31e+00  6.61e+01  5.49e+01  0.00e+00   43.0    211       830       918       33192   1.00
+y_prior[2]        77.1  2.61e+00  8.12e+01  6.97e+01  0.00e+00   55.0    252       908       919       36322  1.000
+y_prior[3]         105  3.45e+00  1.12e+02  9.27e+01  0.00e+00   69.5    344       931      1056       37241   1.00
+y_prior[4]         112  4.03e+00  1.21e+02  9.93e+01  0.00e+00   74.0    362       922       929       36879   1.00
+
+Samples were drawn using hmc with nuts.
+For each parameter, ESS_bulk and ESS_tail measure the effective sample size for the entire sample (bulk) and for the .05 and .95 tails (tail), 
+and R_hat measures the potential scale reduction on split chains. At convergence R_hat will be very close to 1.00.
