@@ -3,7 +3,7 @@ import json
 
 mlb = mlbstatsapi.Mlb()
 # grabbing player names
-player_names = ["Mike Trout", "Shohei Ohtani", "Mookie Betts"]
+player_names = ["Mike Trout", "Freddie Freeman","Shohei Ohtani", "Mookie Betts"]
 data_for_stan = {"N": len(player_names), "y": [], "K": []}
 
 for name in player_names:
@@ -11,8 +11,8 @@ for name in player_names:
     ids = mlb.get_people_id(name)
     if ids:
         p_id = ids[0]
-        # 2. Get 2023 Season Stats
-        stats = mlb.get_player_stats(p_id, stats=['season'], groups=['hitting'],season=2023)
+        # 2. Get 2025 Season Stats
+        stats = mlb.get_player_stats(p_id, stats=['season'], groups=['hitting'],season=2025)
         
         # 3. Extract H and AB
         hitting_stats = stats['hitting']['season'].splits[0].stat

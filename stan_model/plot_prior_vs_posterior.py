@@ -3,16 +3,18 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 import os
 
-output_dir = os.path.join(os.path.dirname(os.path.dirname(__file__)), "efron_plots")
-os.makedirs(output_dir, exist_ok=True)
+MODEL_RESULTS = "model_with_prior_results.csv"
+OUTPUT_DIR = "../efron_plots"
+PLAYER_LABELS = [
+    "Mike Trout (LAA)",
+    "Freddie Freeman (LAD)",
+    "Shohei Ohtani (LAD)",
+    "Mookie Betts (LAD)",
+]
 
 
 def plot_comparison():
-    csv_path = (
-        input("Path to CSV [model_with_prior_results.csv]: ").strip()
-        or "model_with_prior_results.csv"
-    )
-    df = pd.read_csv(csv_path, comment="#")
+    df = pd.read_csv(MODEL_RESULTS, comment="#")
 
     plt.figure(figsize=(10, 6))
 
@@ -46,10 +48,11 @@ def plot_comparison():
     plt.grid(axis="y", alpha=0.3)
     plt.tight_layout()
 
-    output_path = os.path.join(output_dir, "prior_vs_posterior_mu.png")
+    os.makedirs(OUTPUT_DIR, exist_ok=True)
+    output_path = os.path.join(OUTPUT_DIR, "prior_vs_posterior_mu.png")
     plt.savefig(output_path, dpi=150)
     print(f"Saved: {output_path}")
-    plt.show()
+    plt.close()
 
 
 if __name__ == "__main__":
