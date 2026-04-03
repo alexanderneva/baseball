@@ -2,6 +2,7 @@ import mlbstatsapi
 import json
 
 mlb = mlbstatsapi.Mlb()
+# grabbing player names
 player_names = ["Mike Trout", "Shohei Ohtani", "Mookie Betts"]
 data_for_stan = {"N": len(player_names), "y": [], "K": []}
 
