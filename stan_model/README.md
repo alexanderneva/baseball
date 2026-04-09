@@ -12,6 +12,20 @@ This directory contains the Stan implementations of the Beta-Binomial hierarchic
 git clone https://github.com/your-repo/stan_model.git
 ```
 
+## Dependencies
+
+This project uses [uv](https://github.com/astral-sh/uv) for dependency management:
+
+```bash
+uv sync
+```
+
+For other package managers, use `requirements.txt`:
+
+```bash
+pip install -r requirements.txt
+```
+
 ## Stan Model Files
 
 The Stan model files are located in:

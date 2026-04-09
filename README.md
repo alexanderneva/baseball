@@ -22,6 +22,8 @@ For the Stan implementation with full Bayesian inference, see [stan_model/README
 
 For a Python-native implementation using PyMC, see `efronmorris_cleaned.ipynb`.
 
+Note: The notebook uses [ArviZ](https://arviz-devs.github.io/ArviZ/) for visualization of prior/posterior distributions and credible intervals.
+
 ## Results
 
 The model successfully estimates all parameters:
