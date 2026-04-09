@@ -1,6 +1,6 @@
 import mlbstatsapi
 import json
-
+json_name = 'player_data.json'
 mlb = mlbstatsapi.Mlb()
 # grabbing player names
 player_names = ["Mike Trout", "Freddie Freeman","Shohei Ohtani", "Mookie Betts"]
@@ -20,6 +20,7 @@ for name in player_names:
         data_for_stan["K"].append(hitting_stats.at_bats)
 
 # Save as JSON for your Stan terminal command
-with open('player_data.json', 'w') as f:
+print("Saving player data to ", json_name)
+with open(json_name, 'w') as f:
     json.dump(data_for_stan, f)
 

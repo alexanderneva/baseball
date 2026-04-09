@@ -17,7 +17,7 @@ def extract_stan_results(csv_path):
     return results
 
 # Example usage to update your plot variables
-data = extract_stan_results("summary.csv")
+data = extract_stan_results("test.csv")
 stan_mean = data["means"]
 ci_lower = data["lower_ci"]
 ci_upper = data["upper_ci"]
