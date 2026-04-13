@@ -1,3 +1,6 @@
+# The final draft of our report is saved as OdegardShulhan_509_FinalReport.pdf
+
+
 # Bayesian Hierarchical Modeling in Baseball
 
 This project implements a Bayesian hierarchical model for estimating baseball batting averages, based on the Efron-Morris methodology. The goal is to address the challenge of small sample sizes by applying shrinkage estimation—pulling extreme observations toward the population mean.
